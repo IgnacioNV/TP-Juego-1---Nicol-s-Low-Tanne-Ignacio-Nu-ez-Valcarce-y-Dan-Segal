@@ -1,17 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class productoScript : MonoBehaviour
 {
     public GameObject[] arrayProducto;
     Vector3 positionProduct1 = new Vector3(-4, 1, 0);
     Vector3 positionProduct2 = new Vector3(4.8f, 1, 0);
+
+    public Text precioProducto1;
+    public Text precioProducto2;
+    public InputField inputPrecio;
+
+    private precioScript precioScript;
+
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log("The game has started!");
-        foreach (GameObject producto in arrayProducto)
+        foreach(GameObject producto in arrayProducto)
         {
             producto.SetActive(false);
         }

@@ -13,29 +13,33 @@ public class productoScript : MonoBehaviour
     public Text precioProducto2;
     public InputField inputPrecio;
 
-    private precioScript precioScript;
-
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log("The game has started!");
-        foreach(GameObject producto in arrayProducto)
+        foreach (GameObject producto in arrayProducto)
         {
             producto.SetActive(false);
         }
-        crearRandom(positionProduct1);
-        crearRandom(positionProduct2);
+        GameObject producto1 = crearRandom(positionProduct1);
+        GameObject producto2 = crearRandom(positionProduct2);
+
+        precioProducto1.text = "$" + producto1.GetComponent<precioScript>().precio.ToString();
+        precioProducto2.text = "$" + producto2.GetComponent<precioScript>().precio.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    void crearRandom(Vector3 position)
+
+    GameObject crearRandom(Vector3 position)
     {
-        int aleatorio = Random.Range(0, arrayProducto.Length - 1);
+        int aleatorio = Random.Range(0, arrayProducto.Length);
         arrayProducto[aleatorio].SetActive(true);
         arrayProducto[aleatorio].transform.position = position;
+        return arrayProducto[aleatorio];
     }
 }
+

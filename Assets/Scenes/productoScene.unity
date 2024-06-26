@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -349,7 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 20000
 --- !u!1 &494051190
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,7 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 15000
 --- !u!1001 &543236490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -610,7 +610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 150000
 --- !u!1 &604317693
 GameObject:
   m_ObjectHideFlags: 0
@@ -779,7 +779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 12500
 --- !u!1001 &741560514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -875,7 +875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 5000
 --- !u!1 &794884966
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,7 +1220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 150000
 --- !u!23 &1017597163
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1435,7 +1435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 50000
 --- !u!1001 &1222324462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1599,7 +1599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 500000
 --- !u!1 &1301995672
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,7 +1647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 1500
 --- !u!4 &1302166712
 Transform:
   m_ObjectHideFlags: 0
@@ -1954,7 +1954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 500000
 --- !u!1 &1417992811
 GameObject:
   m_ObjectHideFlags: 0
@@ -2305,7 +2305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 5000
 --- !u!1 &1733387240
 GameObject:
   m_ObjectHideFlags: 0
@@ -2621,7 +2621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 3500
 --- !u!1 &1806042900
 GameObject:
   m_ObjectHideFlags: 0
@@ -2851,7 +2851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 7000
 --- !u!1001 &1847642063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2971,7 +2971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 150000
 --- !u!1 &1853480173
 GameObject:
   m_ObjectHideFlags: 0
@@ -3259,7 +3259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 500000
 --- !u!1 &1924960502
 GameObject:
   m_ObjectHideFlags: 0
@@ -3508,7 +3508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 50000
 --- !u!33 &408844513436533516
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3664,7 +3664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 10000
 --- !u!4 &408844513439957800
 Transform:
   m_ObjectHideFlags: 0
@@ -3738,7 +3738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 10000
 --- !u!1 &3636776407194605755
 GameObject:
   m_ObjectHideFlags: 0
@@ -3889,7 +3889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 15000
 --- !u!1 &3756449718882552111
 GameObject:
   m_ObjectHideFlags: 0
@@ -4056,7 +4056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 2500
 --- !u!1 &4250489591266004317
 GameObject:
   m_ObjectHideFlags: 0
@@ -4104,7 +4104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 2500
 --- !u!1 &4617081841476303651
 GameObject:
   m_ObjectHideFlags: 0
@@ -4712,7 +4712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 100000
 --- !u!4 &5699495249928738075
 Transform:
   m_ObjectHideFlags: 0
@@ -4951,7 +4951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124f6781702c24f10a5d2da26afb0f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0
+  precio: 500
 --- !u!1 &6795459648518447545
 GameObject:
   m_ObjectHideFlags: 0

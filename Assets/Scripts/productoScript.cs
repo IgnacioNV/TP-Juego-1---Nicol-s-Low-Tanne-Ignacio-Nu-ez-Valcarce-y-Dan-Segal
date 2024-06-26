@@ -12,13 +12,18 @@ public class productoScript : MonoBehaviour
     public Text precioProducto1;
     public Text precioProducto2;
     public InputField inputPrecio;
-    public float suma;
+    private float suma;
     public Text textoNotificacion;
+    public GameObject PanelMain;
+    public GameObject selectorJuego;
+   
+
     // Start is called before the first frame update
     void Start()
     {
         SecuenciaObjetoRandom();
         textoNotificacion.text = "";
+        PanelMain.SetActive(false);
     }
 
     // Update is called once per frame
@@ -63,17 +68,19 @@ public class productoScript : MonoBehaviour
         }
         else
         {
-            float valorIngresado;
+            float valorIngresado = float.Parse (inputPrecio.text);
             bool esNumero = float.TryParse(inputPrecio.text, out valorIngresado);
 
             if (esNumero)
             {
                 if (valorIngresado == suma)
                 {
+                    PanelMain.SetActive(true);
                     MostrarNotificacion("Resultado correcto");
                 }
                 else
                 {
+                    PanelMain.SetActive(true);
                     MostrarNotificacion("Resultado incorrecto");
                 }
             }
@@ -88,6 +95,20 @@ public class productoScript : MonoBehaviour
     void MostrarNotificacion(string mensaje)
     {
         textoNotificacion.text = mensaje;
+    }
+
+    public void reiniciarJuego()
+    {
+        selectorJuego.SetActive(false);
+        PanelMain.SetActive(false);
+        SecuenciaObjetoRandom();
+        textoNotificacion.text = "";
+        inputPrecio.text ="";
+      
+    }
+    public void salirJuego()
+    {
+        selectorJuego.SetActive(true);
     }
 }
 

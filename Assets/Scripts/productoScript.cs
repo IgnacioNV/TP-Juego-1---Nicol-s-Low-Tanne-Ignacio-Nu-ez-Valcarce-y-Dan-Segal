@@ -16,7 +16,8 @@ public class productoScript : MonoBehaviour
     public Text textoNotificacion;
     public GameObject PanelMain;
     public GameObject selectorJuego;
-   
+    public GameObject BTNIncorrecto;
+    public GameObject BTNCorrecto;
 
     // Start is called before the first frame update
     void Start()
@@ -65,6 +66,8 @@ public class productoScript : MonoBehaviour
         if (string.IsNullOrEmpty(inputPrecio.text))
         {
             MostrarNotificacion("Debes ingresar un resultado");
+           
+
         }
         else
         {
@@ -76,11 +79,15 @@ public class productoScript : MonoBehaviour
                 if (valorIngresado == suma)
                 {
                     PanelMain.SetActive(true);
+                    BTNIncorrecto.SetActive(false);
+                    BTNCorrecto.SetActive(true);
                     MostrarNotificacion("Resultado correcto");
                 }
                 else
                 {
                     PanelMain.SetActive(true);
+                    BTNCorrecto.SetActive(false);
+                    BTNIncorrecto.SetActive(true);
                     MostrarNotificacion("Resultado incorrecto");
                 }
             }
@@ -95,20 +102,34 @@ public class productoScript : MonoBehaviour
     void MostrarNotificacion(string mensaje)
     {
         textoNotificacion.text = mensaje;
+
     }
 
-    public void reiniciarJuego()
-    {
+
+    public void volverajugar()
+    {  
         selectorJuego.SetActive(false);
         PanelMain.SetActive(false);
-        SecuenciaObjetoRandom();
         textoNotificacion.text = "";
-        inputPrecio.text ="";
-      
+        inputPrecio.text = "";
+
+    }
+    public void reiniciarJuego()
+    {
+        
+            selectorJuego.SetActive(false);
+            PanelMain.SetActive(false);
+            SecuenciaObjetoRandom();
+            textoNotificacion.text = "";
+            inputPrecio.text = "";
+        
+
     }
     public void salirJuego()
     {
         selectorJuego.SetActive(true);
+        textoNotificacion.text = "";
+        inputPrecio.text = "";
     }
 }
 

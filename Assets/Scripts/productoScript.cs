@@ -35,7 +35,7 @@ public class productoScript : MonoBehaviour
     void SecuenciaObjetoRandom()
 
     {
-        Debug.Log("The game has started!");
+        
         foreach (GameObject producto in arrayProducto)
         {
             producto.SetActive(false);
@@ -63,6 +63,22 @@ public class productoScript : MonoBehaviour
     //
     public void ValidarSuma()
     {
+        int result;
+        if (int.TryParse(inputPrecio.text, out result))
+        {
+            
+        }
+        else
+        {
+            Debug.Log("No es un número entero.");
+
+            PanelMain.SetActive(true);
+            BTNCorrecto.SetActive(false);
+            BTNIncorrecto.SetActive(true);
+            MostrarNotificacion("Ingrese un numero entero");
+        }
+
+
         if (string.IsNullOrEmpty(inputPrecio.text))
         {
             MostrarNotificacion("Debes ingresar un resultado");
@@ -76,6 +92,7 @@ public class productoScript : MonoBehaviour
 
             if (esNumero)
             {
+
                 if (valorIngresado == suma)
                 {
                     PanelMain.SetActive(true);
